@@ -1,0 +1,31 @@
+module.exports = {
+  content: ["./src/**/*.{html,js}", './node_modules/tw-elements/dist/js/**/*.js'],
+  theme: {
+    extend: {
+      colors: {
+        transparent: "transparent",
+        current: "currentColor",
+        "primary-main": "#06856c",
+        "primary-surface": "#CDE7E2",
+        "primary-pressed": "#034236",
+        "primary-hover": "#056F5A",
+        "primary-border": "#ACD6CE",
+        "danger-main": "#D92D20",
+        "danger-hover": "#B5251B",
+        "danger-border": "#F2B9B5",
+        "grayscale-10": "#060A18",
+        "grayscale-9": "#3C4254",
+        "grayscale-8": "#686C7C",
+        "grayscale-2": "#f5f6f7",
+        "grayscale-7": "#7C7F8D",
+        "grayscale-6": "#A3A5AF",
+        "grayscale-5": "#C5C6CC",
+        "grayscale-4": "#E2E3E6",
+        "grayscale-3": "#EEEEF0",
+        "grayscale-1": "#FFFFFF",
+        "success-main": "#008026",
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};

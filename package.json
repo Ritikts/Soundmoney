@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.2",
+    "bootstrap-icons": "^1.9.1",
+    "flowbite": "^1.5.2",
+    "jshint": "^2.13.5",
+    "tw-elements": "^1.0.0-alpha12"
+  }
+}

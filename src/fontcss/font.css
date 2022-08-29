@@ -1,0 +1,21 @@
+@font-face {
+  font-family: openSauceSans;
+  src: url("../font/OpenSauceSans-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: openSauceSans;
+  src: url("../font/OpenSauceSans-SemiBold.ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: openSauceSans;
+  src: url("../font/OpenSauceSans-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+body {
+  font-family: openSauceSans !important;
+}

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="/dist/output.css" rel="stylesheet" />
+      <link rel="stylesheet" href="extracss/style.css" />
+      <link rel="stylesheet" href="./fontcss/font.css" />
+      <!-- Title  -->
+      <title>Soundmoney</title>
+      <!-- Title  -->
+      <!-- Favicon -->
+      <link rel="shortcut icon" type="image/jpg" href="img/logo.svg" />
+      <link rel="apple-touch-icon" sizes="96*96" href="img/logo.svg" />
+      <!-- Favicon -->
+      <meta name="theme-color" content="#06856C" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+   </head>
+   <body>
+      <section>
+         <!-- Navigation -->
+         <nav class="flex justify-between items-center lg:px-28 px-6 py-4 border-b border-grayscale-3 border-solid">
+            <div class="flex items-center w-full justify-between sm:w-auto sm:space-x-5 lg:space-x-10 xl:space-x-16">
+               <div class="space-x-2 flex items-center">
+                  <div>
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M0 0V19.2515L11.9573 24L23.9145 19.2515V0H0ZM21.5512 17.6374L14.2036 20.5614L11.9573 21.4503L9.80449 20.5848L2.36337 17.6374V2.36257H21.5278V17.6374H21.5512Z"
+                           fill="#060A18" />
+                        <path d="M16.754 4.77185H19.1408V7.15781H16.754V4.77185Z" fill="#060A18" />
+                        <path
+                           d="M11.9572 18.8303V18.8537L19.1409 15.9765V9.42682H16.7541V14.3625L11.9572 16.2806L7.16023 14.3625V7.15781H11.9572V9.54378H9.54701V12.7719L11.9572 13.7075V13.6841H11.9806L14.344 12.7719V4.77185H4.75006V15.9765L11.9338 18.8537L11.9572 18.8303Z"
+                           fill="#060A18" />
+                     </svg>
+                  </div>
+                  <h1 class="sm:hidden text-lg font-semibold text-grayscale-10">
+                     Soundmoney
+                  </h1>
+               </div>
+               <div class="hidden sm:flex sm:space-x-5 xl:space-x-10">
+                  <div class="xl:space-x-3 space-x-2">
+                     <i class="bi bi-grid-1x2-fill text-grayscale-9 hover:text-primary-main"></i><a href="#"
+                        class="text-sm font-semibold text-grayscale-9">Dashboard</a>
+                  </div>
+                  <div class="xl:space-x-3 space-x-2">
+                     <i class="bi bi-person-fill text-grayscale-9 hover:text-primary-main "></i><a href="#"
+                        class="text-sm font-semibold text-grayscale-9">Friends</a>
+                  </div>
+                  <div class="xl:space-x-3 space-x-2">
+                     <i class="bi bi-gear-fill text-grayscale-9 hover:text-primary-main  "></i><a href="#"
+                        class="text-sm font-semibold text-grayscale-9">Setting</a>
+                  </div>
+                  <div class="xl:space-x-3 space-x-2">
+                     <i class="bi bi-question-circle-fill text-grayscale-9 hover:text-primary-main "></i><a href="#"
+                        class="text-sm font-semibold text-grayscale-9">Help Center</a>
+                  </div>
+               </div>
+               <div class="sm:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                     class="bi bi-filter-right" viewBox="0 0 16 16">
+                     <path
+                        d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z" />
+                  </svg>
+               </div>
+            </div>
+            <div class="hidden sm:flex sm:items-center sm:justify-center sm:space-x-3">
+               <div>
+                  <a href="#" class="block relative">
+                  <img alt="profil"
+                     src="https://images.unsplash.com/photo-1484515991647-c5760fcecfc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80"
+                     class="object-cover rounded-full h-10 w-10" />
+                  </a>
+               </div>
+               <div class="space-y-1.5">
+                  <h2 class="text-sm font-semibold text-grayscale-10">Alex ever</h2>
+                  <h3 class="text-xs font-medium text-grayscale-7">
+                     alexever@gmail.com
+                  </h3>
+               </div>
+               <div><i class="bi bi-arrow-down-short text-grayscale-10"></i></div>
+            </div>
+         </nav>
+         <!-- Navigation -->
+         <!-- Content -->
+         <div class="px-6 py-6 space-y-4 lg:px-[125px] xl:px-[150px]">
+            <!-- Pagination -->
+            <div class="flex items-center space-x-2">
+               <a href="#" class="text-xs font-semibold text-grayscale-7">Dashboard</a>
+               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                  class="bi bi-arrow-right-short text-grayscale-6" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                     d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+               </svg>
+               <a href="#" class="p-2 rounded-lg bg-grayscale-2 text-xs font-semibold text-grayscale-8">Cash</a>
+            </div>
+            <!-- Pagination -->
+            <!-- Table -->
+            <div class="flex w-full flex-col xl:flex-row space-y-6 xl:space-y-0 xl:space-x-6">
+               <!-- Table Right -->
+               <div class="sm:p-6 p-4 border border-grayscale-3 rounded-2xl space-y-6 w-full h-full">
+                  <div>
+                     <h1 class="text-base font-semibold text-grayscale-10">
+                        Transaction summary
+                     </h1>
+                  </div>
+                  <div>
+                     <input type="search" placeholder="Search transaction"
+                        class="w-full bg-grayscale-2 border-0 px-4 py-3.5 rounded-xl placeholder-grayscale-8 placeholder-medium focus:ring-0" />
+                  </div>
+                  <div class="flex sm:space-x-8 space-x-4">
+                     <div>
+                        <a href="#"
+                           class="px-3 py-2 bg-primary-main rounded-[26px] text-grayscale-1 sm:text-sm text-xs font-medium">All&nbsp;transactions</a>
+                     </div>
+                     <div>
+                        <a href="#" class="sm:text-sm text-xs font-semibold text-primary-main">Add&nbsp;funds</a>
+                     </div>
+                     <div>
+                        <a href="#" class="sm:text-sm text-xs font-semibold text-primary-main">Withdraw</a>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="flex justify-between py-5 border-b border-grayscale-3 border-solid">
+                        <div class="flex items-center space-x-2 sm:space-x-4">
+                           <div>
+                              <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <rect width="40" height="40" rx="20" fill="#121D47" />
+                                 <path
+                                    d="M23.8387 21.2311L22.0547 20.2011L24.4547 16.0442C25.0147 15.0742 24.6027 14.5746 23.5418 14.932L22.7766 15.1908L16.3013 17.3797C15.4143 17.6759 15.3528 18.3024 16.1611 18.7691L17.9451 19.7991L15.5451 23.956C14.9851 24.926 15.3972 25.4256 16.458 25.0681L17.2233 24.8094L23.6986 22.6205C24.5855 22.3243 24.647 21.6977 23.8387 21.2311Z"
+                                    fill="white" />
+                              </svg>
+                           </div>
+                           <div class="space-y-0.5">
+                              <h1 class="text-xs xl:text-sm font-semibold text-grayscale-10">
+                                 Silver coin
+                              </h1>
+                              <h2 class="text-xs font-medium text-grayscale-8">
+                                 Fee: $5.00
+                              </h2>
+                           </div>
+                        </div>
+                        <div class="space-y-0.5">
+                           <div class="text-xs xl:text-sm font-medium text-grayscale-9">
+                              30 April 2022
+                           </div>
+                           <div class="text-xs font-medium text-grayscale-8">
+                              at 10.30
+                           </div>
+                        </div>
+                        <div>
+                           <div class="text-xs xl:text-sm font-semibold text-danger-hover">
+                              -$2.281
+                           </div>
+                        </div>
+                     </div>
+                     <div class="flex justify-between py-5 border-b border-grayscale-3 border-solid">
+                        <div class="flex items-center space-x-2 sm:space-x-4">
+                           <div>
+                              <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <rect width="40" height="40" rx="20" fill="#FDC22E" />
+                                 <path
+                                    d="M23.8387 21.2311L22.0547 20.2011L24.4547 16.0442C25.0147 15.0742 24.6027 14.5746 23.5418 14.932L22.7766 15.1908L16.3013 17.3797C15.4143 17.6759 15.3528 18.3024 16.1611 18.7691L17.9451 19.7991L15.5451 23.956C14.9851 24.926 15.3972 25.4256 16.458 25.0681L17.2233 24.8094L23.6986 22.6205C24.5855 22.3243 24.647 21.6977 23.8387 21.2311Z"
+                                    fill="white" />
+                              </svg>
+                           </div>
+                           <div class="space-y-0.5">
+                              <h1 class="text-xs xl:text-sm font-semibold text-grayscale-10">
+                                 Gold bars
+                              </h1>
+                              <h2 class="text-xs font-medium text-grayscale-8">
+                                 Fee: $5.00
+                              </h2>
+                           </div>
+                        </div>
+                        <div class="space-y-0.5">
+                           <div class="text-xs xl:text-sm font-medium text-grayscale-9">
+                              30 April 2022
+                           </div>
+                           <div class="text-xs font-medium text-grayscale-8">
+                              at 10.30
+                           </div>
+                        </div>
+                        <div>
+                           <div class="text-xs xl:text-sm font-semibold text-danger-hover">
+                              -$66,00
+                           </div>
+                        </div>
+                     </div>
+                     <div class="flex justify-between py-5 border-b border-grayscale-3 border-solid">
+                        <div class="flex items-center space-x-2 sm:space-x-4">
+                           <div>
+                              <svg width="40" height="32" viewBox="0 0 40 32" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M7.27704 31.3909V29.3309C7.28912 29.1577 7.26412 28.9838 7.20372 28.821C7.14331 28.6582 7.04888 28.5101 6.92672 28.3866C6.80456 28.2632 6.65748 28.1672 6.4953 28.105C6.33311 28.0429 6.15955 28.0161 5.98617 28.0263C5.75927 28.0115 5.53255 28.0579 5.32966 28.1605C5.12676 28.2632 4.95512 28.4184 4.83261 28.61C4.72096 28.4241 4.56127 28.2718 4.37034 28.1691C4.17941 28.0664 3.96432 28.0171 3.74771 28.0263C3.5589 28.0168 3.37088 28.0568 3.20227 28.1423C3.03366 28.2278 2.89031 28.3559 2.78641 28.5138V28.1087H2.07227V31.3909H2.79324V29.5713C2.77765 29.459 2.78713 29.3446 2.82098 29.2364C2.85483 29.1283 2.91222 29.0289 2.98903 28.9455C3.06583 28.8622 3.16015 28.7968 3.2652 28.7543C3.37026 28.7117 3.48345 28.6929 3.59663 28.6992C4.07041 28.6992 4.31077 29.0082 4.31077 29.5644V31.3909H5.03174V29.5713C5.01733 29.4592 5.02762 29.3453 5.0619 29.2376C5.09618 29.13 5.15363 29.0311 5.23019 28.948C5.30675 28.8649 5.40059 28.7996 5.50509 28.7566C5.6096 28.7136 5.72224 28.694 5.83512 28.6992C6.32261 28.6992 6.55606 29.0082 6.55606 29.5644V31.3909H7.27704ZM17.9475 28.1087H16.7802V27.1131H16.0593V28.1087H15.3932V28.761H16.0593V30.2579C16.0593 31.0201 16.3545 31.4733 17.1991 31.4733C17.5146 31.4743 17.824 31.3862 18.0917 31.2192L17.8857 30.6081C17.6942 30.7223 17.4769 30.7861 17.254 30.7935C16.8969 30.7935 16.7802 30.5737 16.7802 30.2442V28.761H17.9475V28.1087ZM24.0381 28.0263C23.864 28.0212 23.6917 28.0631 23.5394 28.1477C23.3872 28.2323 23.2605 28.3564 23.1729 28.507V28.1087H22.4656V31.3909H23.1798V29.5506C23.1798 29.0082 23.4132 28.7061 23.8802 28.7061C24.0329 28.704 24.1846 28.732 24.3265 28.7885L24.5462 28.1156C24.3831 28.0572 24.2113 28.027 24.0381 28.0263ZM14.8302 28.3696C14.426 28.1293 13.9612 28.0101 13.4912 28.0263C12.6603 28.0263 12.1248 28.4246 12.1248 29.0769C12.1248 29.6125 12.523 29.9421 13.2577 30.0451L13.5942 30.0931C13.9855 30.148 14.171 30.251 14.171 30.4364C14.171 30.6905 13.91 30.8347 13.4225 30.8347C13.0304 30.846 12.6458 30.7251 12.3307 30.4913L11.9943 31.0475C12.4103 31.338 12.9085 31.4873 13.4157 31.4733C14.3632 31.4733 14.9125 31.0269 14.9125 30.4021C14.9125 29.8253 14.48 29.5232 13.7659 29.4202L13.4294 29.3721C13.1204 29.3309 12.8732 29.2692 12.8732 29.0495C12.8732 28.8091 13.1066 28.6649 13.4981 28.6649C13.8575 28.6703 14.2096 28.7672 14.5212 28.9464L14.8302 28.3696ZM33.9601 28.0263C33.786 28.0212 33.6137 28.0631 33.4614 28.1477C33.3092 28.2323 33.1825 28.3564 33.0949 28.507V28.1087H32.3877V31.3909H33.1018V29.5506C33.1018 29.0082 33.3352 28.7061 33.8021 28.7061C33.9549 28.704 34.1066 28.732 34.2485 28.7885L34.4682 28.1156C34.3051 28.0572 34.1333 28.027 33.9601 28.0263ZM24.759 29.7497C24.7495 29.981 24.7885 30.2116 24.8736 30.4269C24.9586 30.6421 25.0877 30.8372 25.2526 30.9995C25.4175 31.1619 25.6146 31.2879 25.8312 31.3695C26.0477 31.4511 26.279 31.4864 26.51 31.4733C26.9387 31.4948 27.36 31.3552 27.691 31.0819L27.3477 30.5051C27.1008 30.6933 26.7998 30.7968 26.4894 30.8003C26.2218 30.7841 25.9705 30.6664 25.7867 30.4711C25.603 30.2759 25.5007 30.0179 25.5007 29.7498C25.5007 29.4817 25.603 29.2237 25.7867 29.0285C25.9705 28.8332 26.2218 28.7155 26.4894 28.6992C26.7998 28.7027 27.1008 28.8063 27.3477 28.9945L27.691 28.4177C27.36 28.1444 26.9387 28.0048 26.51 28.0263C26.279 28.0132 26.0478 28.0486 25.8312 28.1301C25.6147 28.2117 25.4176 28.3377 25.2527 28.5001C25.0877 28.6624 24.9586 28.8574 24.8736 29.0727C24.7886 29.2879 24.7495 29.5185 24.759 29.7497ZM31.447 29.7497V28.1087H30.7329V28.507C30.611 28.3499 30.4532 28.2243 30.2728 28.1407C30.0924 28.0571 29.8947 28.0178 29.696 28.0263C29.2535 28.048 28.8363 28.2391 28.5308 28.5599C28.2253 28.8808 28.055 29.3068 28.055 29.7498C28.055 30.1928 28.2253 30.6189 28.5308 30.9397C28.8363 31.2606 29.2535 31.4516 29.696 31.4733C29.8947 31.4818 30.0925 31.4426 30.2728 31.3589C30.4532 31.2753 30.611 31.1497 30.7329 30.9926V31.3909H31.447V29.7497ZM28.7896 29.7497C28.8007 29.5561 28.8682 29.3699 28.9839 29.2141C29.0995 29.0583 29.2582 28.9398 29.4404 28.8732C29.6226 28.8065 29.8203 28.7946 30.0091 28.839C30.198 28.8834 30.3697 28.9821 30.5032 29.1229C30.6366 29.2637 30.726 29.4405 30.7601 29.6314C30.7943 29.8224 30.7719 30.0192 30.6955 30.1975C30.6192 30.3759 30.4924 30.528 30.3306 30.6351C30.1689 30.7422 29.9793 30.7997 29.7853 30.8003C29.6493 30.8022 29.5145 30.7758 29.3892 30.723C29.2639 30.6701 29.1509 30.5918 29.0574 30.4931C28.9638 30.3944 28.8917 30.2774 28.8457 30.1495C28.7996 30.0215 28.7805 29.8854 28.7896 29.7497ZM20.1723 28.0263C19.727 28.0498 19.308 28.2448 19.0033 28.5704C18.6987 28.8961 18.532 29.327 18.5382 29.7729C18.5444 30.2188 18.7231 30.645 19.0367 30.962C19.3503 31.2791 19.7745 31.4623 20.2203 31.4733C20.7102 31.4905 21.1893 31.3267 21.5662 31.0132L21.2159 30.4845C20.9448 30.7018 20.609 30.8226 20.2615 30.8278C20.0256 30.8477 19.7911 30.7749 19.6079 30.625C19.4246 30.475 19.3069 30.2596 19.2796 30.0244H21.7172C21.7241 29.9352 21.7309 29.8459 21.7309 29.7497C21.7241 28.7267 21.0924 28.0263 20.1723 28.0263ZM20.1585 28.6649C20.3742 28.6607 20.5828 28.7422 20.7385 28.8915C20.8942 29.0408 20.9845 29.2457 20.9894 29.4614H19.2865C19.299 29.2411 19.3973 29.0344 19.5602 28.8855C19.7232 28.7367 19.9379 28.6575 20.1585 28.6649ZM38.0731 29.7497V26.7904H37.359V28.507C37.2371 28.3499 37.0793 28.2243 36.899 28.1407C36.7186 28.0571 36.5208 28.0178 36.3222 28.0263C35.8797 28.048 35.4624 28.2391 35.1569 28.5599C34.8514 28.8807 34.681 29.3068 34.681 29.7498C34.681 30.1928 34.8514 30.6189 35.1569 30.9398C35.4624 31.2606 35.8797 31.4516 36.3222 31.4733C36.5208 31.4818 36.7186 31.4426 36.899 31.3589C37.0793 31.2753 37.2371 31.1497 37.359 30.9926V31.3909H38.0731V29.7497ZM39.2635 30.9152C39.3078 30.9149 39.3518 30.9237 39.3927 30.9409C39.432 30.9572 39.4678 30.981 39.4982 31.0108C39.5284 31.0405 39.5525 31.0758 39.5693 31.1147C39.5865 31.1547 39.5954 31.1978 39.5954 31.2413C39.5954 31.2848 39.5865 31.3279 39.5693 31.3678C39.5524 31.4066 39.5283 31.4417 39.4982 31.4714C39.4677 31.5012 39.4319 31.525 39.3927 31.5417C39.3519 31.5592 39.3079 31.568 39.2635 31.5677C39.1982 31.5684 39.1341 31.5498 39.0793 31.5142C39.0245 31.4787 38.9813 31.4277 38.9553 31.3678C38.9382 31.3278 38.9293 31.2848 38.9293 31.2413C38.9293 31.1978 38.9382 31.1547 38.9553 31.1147C38.972 31.0759 38.9961 31.0406 39.0261 31.0108C39.0565 30.9808 39.0925 30.957 39.132 30.9409C39.1737 30.9236 39.2184 30.9149 39.2635 30.9152ZM39.2635 31.4957C39.2973 31.496 39.3308 31.4892 39.3619 31.4758C39.3917 31.4628 39.4188 31.4444 39.4418 31.4214C39.4892 31.3735 39.5158 31.3088 39.5158 31.2414C39.5158 31.1741 39.4892 31.1094 39.4418 31.0615C39.4189 31.0386 39.3917 31.0203 39.3619 31.0076C39.3308 30.9944 39.2973 30.9877 39.2635 30.988C39.2291 30.9877 39.195 30.9944 39.1632 31.0076C39.1329 31.0201 39.1053 31.0384 39.082 31.0615C39.0346 31.1094 39.008 31.174 39.008 31.2414C39.008 31.3088 39.0346 31.3735 39.082 31.4214C39.1053 31.4445 39.1329 31.463 39.1632 31.4758C39.1949 31.4892 39.229 31.496 39.2635 31.4957ZM39.2827 31.0887C39.3148 31.0866 39.3466 31.0958 39.3727 31.1147C39.3831 31.1233 39.3913 31.1341 39.3968 31.1464C39.4023 31.1587 39.4048 31.1721 39.4042 31.1855C39.4046 31.197 39.4025 31.2085 39.3982 31.2191C39.3939 31.2298 39.3874 31.2394 39.3791 31.2474C39.3592 31.2651 39.334 31.2756 39.3075 31.2774L39.4066 31.3918H39.3291L39.2372 31.2782H39.2076V31.3918H39.1428V31.0887H39.2827ZM39.2076 31.1455V31.2263H39.2819C39.2962 31.227 39.3104 31.2235 39.3227 31.2162C39.3277 31.2129 39.3318 31.2083 39.3344 31.2029C39.3371 31.1975 39.3383 31.1915 39.3379 31.1855C39.3382 31.1796 39.337 31.1737 39.3343 31.1685C39.3317 31.1632 39.3277 31.1587 39.3227 31.1555C39.3104 31.1483 39.2962 31.1448 39.2819 31.1455H39.2076ZM35.4158 29.7497C35.4269 29.5561 35.4944 29.3699 35.6101 29.2141C35.7257 29.0584 35.8844 28.9399 36.0666 28.8732C36.2488 28.8066 36.4465 28.7948 36.6353 28.8391C36.8242 28.8835 36.9959 28.9822 37.1293 29.123C37.2627 29.2638 37.3521 29.4406 37.3862 29.6315C37.4204 29.8225 37.3979 30.0193 37.3216 30.1976C37.2453 30.3759 37.1184 30.528 36.9567 30.6351C36.7949 30.7422 36.6054 30.7997 36.4114 30.8003C36.2754 30.8022 36.1406 30.7758 36.0153 30.7229C35.89 30.6701 35.777 30.5918 35.6835 30.4931C35.5899 30.3944 35.5179 30.2774 35.4718 30.1495C35.4257 30.0215 35.4067 29.8854 35.4158 29.7497ZM11.3008 29.7497V28.1087H10.5867V28.507C10.4648 28.3499 10.307 28.2243 10.1267 28.1407C9.94627 28.0571 9.74847 28.0178 9.54983 28.0263C9.10734 28.048 8.69015 28.2391 8.38466 28.5599C8.07916 28.8808 7.90877 29.3068 7.90877 29.7498C7.90877 30.1928 8.07916 30.6189 8.38466 30.9397C8.69015 31.2606 9.10734 31.4516 9.54983 31.4733C9.74848 31.4818 9.94627 31.4426 10.1267 31.3589C10.307 31.2753 10.4648 31.1497 10.5867 30.9926V31.3909H11.3008V29.7497ZM8.64351 29.7497C8.6546 29.5561 8.72213 29.3699 8.83777 29.2141C8.95341 29.0584 9.11211 28.9399 9.29429 28.8732C9.47647 28.8066 9.67418 28.7948 9.86302 28.8391C10.0519 28.8835 10.2236 28.9822 10.357 29.123C10.4905 29.2638 10.5798 29.4406 10.6139 29.6315C10.6481 29.8225 10.6256 30.0193 10.5493 30.1976C10.473 30.3759 10.3461 30.528 10.1844 30.6351C10.0226 30.7423 9.83309 30.7997 9.63911 30.8003C9.50314 30.8022 9.36826 30.7758 9.24298 30.7229C9.1177 30.6701 9.00473 30.5918 8.9112 30.4931C8.81766 30.3944 8.74559 30.2774 8.69951 30.1495C8.65344 30.0215 8.63437 29.8854 8.64351 29.7497Z"
+                                    fill="#231F20" />
+                                 <path d="M25.4079 3.09534H14.5918V22.5323H25.4079V3.09534Z" fill="#FF5F00" />
+                                 <path
+                                    d="M15.279 12.8144C15.2772 10.9425 15.7014 9.09476 16.5194 7.41101C17.3374 5.72727 18.5277 4.25169 20.0002 3.09598C18.1767 1.66263 15.9867 0.771249 13.6805 0.523723C11.3743 0.276197 9.04498 0.682513 6.95879 1.69623C4.8726 2.70994 3.1137 4.29015 1.88314 6.25625C0.652576 8.22235 0 10.495 0 12.8144C0 15.1339 0.652576 17.4065 1.88314 19.3726C3.1137 21.3387 4.8726 22.9189 6.95879 23.9326C9.04498 24.9464 11.3743 25.3527 13.6805 25.1052C15.9867 24.8576 18.1767 23.9663 20.0002 22.5329C18.5277 21.3772 17.3374 19.9016 16.5194 18.2179C15.7014 16.5341 15.2773 14.6863 15.279 12.8144Z"
+                                    fill="#EB001B" />
+                                 <path
+                                    d="M39.9996 12.8144C39.9997 15.1338 39.3472 17.4065 38.1167 19.3726C36.8862 21.3387 35.1274 22.9189 33.0412 23.9326C30.9551 24.9464 28.6258 25.3527 26.3197 25.1052C24.0135 24.8576 21.8235 23.9662 20 22.5329C21.4713 21.376 22.6606 19.9002 23.4785 18.2167C24.2963 16.5332 24.7213 14.686 24.7213 12.8144C24.7213 10.9428 24.2963 9.09563 23.4785 7.41215C22.6606 5.72868 21.4713 4.25285 20 3.09597C21.8235 1.66262 24.0135 0.771244 26.3197 0.523721C28.6258 0.276198 30.9551 0.682521 33.0412 1.69625C35.1274 2.70997 36.8862 4.29019 38.1167 6.25629C39.3472 8.22239 39.9997 10.495 39.9996 12.8144Z"
+                                    fill="#F79E1B" />
+                                 <path
+                                    d="M38.8204 20.4738V20.0759H38.9809V19.9948H38.5723V20.0759H38.7328V20.4738H38.8204ZM39.6138 20.4738V19.994H39.4886L39.3445 20.324L39.2004 19.994H39.075V20.4738H39.1635V20.1119L39.2986 20.4239H39.3903L39.5254 20.1111V20.4738H39.6138Z"
+                                    fill="#F79E1B" />
+                              </svg>
+                           </div>
+                           <div class="space-y-0.5">
+                              <h1 class="text-xs xl:text-sm font-semibold text-grayscale-10">
+                                 Add cash
+                              </h1>
+                              <h2 class="text-xs font-medium text-grayscale-8">
+                                 Mastercard
+                              </h2>
+                           </div>
+                        </div>
+                        <div class="space-y-0.5">
+                           <div class="text-xs xl:text-sm font-medium text-grayscale-9">
+                              30 April 2022
+                           </div>
+                           <div class="text-xs font-medium text-grayscale-8">
+                              at 10.30
+                           </div>
+                        </div>
+                        <div>
+                           <div class="text-xs xl:text-sm font-semibold text-success-main">
+                              +$212.99
+                           </div>
+                        </div>
+                     </div>
+                     <div class="flex justify-between py-5 border-b border-grayscale-3 border-solid">
+                        <div class="flex items-center space-x-2 sm:space-x-4">
+                           <div>
+                              <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <rect width="40" height="40" rx="20" fill="#0372E2" />
+                                 <path
+                                    d="M19.9993 20.5C17.886 20.5 16.166 18.78 16.166 16.6666C16.166 14.5533 17.886 12.8333 19.9993 12.8333C22.1127 12.8333 23.8327 14.5533 23.8327 16.6666C23.8327 18.78 22.1127 20.5 19.9993 20.5ZM19.9993 13.8333C18.4393 13.8333 17.166 15.1066 17.166 16.6666C17.166 18.2266 18.4393 19.5 19.9993 19.5C21.5593 19.5 22.8327 18.2266 22.8327 16.6666C22.8327 15.1066 21.5593 13.8333 19.9993 13.8333Z"
+                                    fill="white" />
+                                 <path
+                                    d="M25.7268 27.1667C25.4534 27.1667 25.2268 26.94 25.2268 26.6667C25.2268 24.3667 22.8801 22.5 20.0001 22.5C17.1201 22.5 14.7734 24.3667 14.7734 26.6667C14.7734 26.94 14.5468 27.1667 14.2734 27.1667C14.0001 27.1667 13.7734 26.94 13.7734 26.6667C13.7734 23.82 16.5668 21.5 20.0001 21.5C23.4334 21.5 26.2268 23.82 26.2268 26.6667C26.2268 26.94 26.0001 27.1667 25.7268 27.1667Z"
+                                    fill="white" />
+                              </svg>
+                           </div>
+                           <div class="space-y-0.5">
+                              <h1 class="text-xs xl:text-sm font-semibold text-grayscale-10">
+                                 Asset’s name
+                              </h1>
+                              <h2 class="text-xs font-medium text-grayscale-8">Name</h2>
+                           </div>
+                        </div>
+                        <div class="space-y-0.5">
+                           <div class="text-xs xl:text-sm font-medium text-grayscale-9">
+                              30 April 2022
+                           </div>
+                           <div class="text-xs font-medium text-grayscale-8">
+                              at 10.30
+                           </div>
+                        </div>
+                        <div>
+                           <div class="text-xs xl:text-sm font-semibold text-danger-hover">
+                              -$0.00
+                           </div>
+                        </div>
+                     </div>
+                     <div class="flex justify-between py-5">
+                        <div class="flex items-center space-x-2 sm:space-x-4">
+                           <div>
+                              <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <rect width="40" height="40" rx="20" fill="#121D47" />
+                                 <path
+                                    d="M23.8387 21.2311L22.0547 20.2011L24.4547 16.0442C25.0147 15.0742 24.6027 14.5746 23.5418 14.932L22.7766 15.1908L16.3013 17.3797C15.4143 17.6759 15.3528 18.3024 16.1611 18.7691L17.9451 19.7991L15.5451 23.956C14.9851 24.926 15.3972 25.4256 16.458 25.0681L17.2233 24.8094L23.6986 22.6205C24.5855 22.3243 24.647 21.6977 23.8387 21.2311Z"
+                                    fill="white" />
+                              </svg>
+                           </div>
+                           <div class="space-y-0.5">
+                              <h1 class="text-xs xl:text-sm font-semibold text-grayscale-10">
+                                 Asset’s name
+                              </h1>
+                              <h2 class="text-xs font-medium text-grayscale-8">Name</h2>
+                           </div>
+                        </div>
+                        <div class="space-y-0.5">
+                           <div class="text-xs xl:text-sm font-medium text-grayscale-9">
+                              30 April 2022
+                           </div>
+                           <div class="text-xs font-medium text-grayscale-8">
+                              at 10.30
+                           </div>
+                        </div>
+                        <div>
+                           <div class="text-xs xl:text-sm font-semibold text-danger-hover">
+                              -$0.00
+                           </div>
+                        </div>
+                     </div>
+                     <div class="pt-4">
+                        <a href="#" class="text-sm font-semibold text-primary-main">View more</a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Table Right -->
+               <!-- Table Left -->
+               <div class="space-y-6 h-full">
+                  <!-- Table Left Top -->
+                  <div class="sm:p-6 p-4 space-y-8 border border-grayscale-3 rounded-2xl w-full">
+                     <div class="space-y-2.5">
+                        <div class="flex justify-between items-center ">
+                           <h1 class="text-sm font-semibold text-grayscale-9">Cash balance</h1>
+                           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect width="40" height="40" rx="20" fill="#06856C" />
+                              <path
+                                 d="M23.8387 21.2311L22.0547 20.2011L24.4547 16.0442C25.0147 15.0742 24.6027 14.5746 23.5418 14.932L22.7766 15.1908L16.3013 17.3797C15.4143 17.6759 15.3528 18.3024 16.1611 18.7691L17.9451 19.7991L15.5451 23.956C14.9851 24.926 15.3972 25.4256 16.458 25.0681L17.2233 24.8094L23.6986 22.6205C24.5855 22.3243 24.647 21.6977 23.8387 21.2311Z"
+                                 fill="white" />
+                           </svg>
+                        </div>
+                        <div class="text-2xl font-semibold text-grayscale-10">$12,255.00</div>
+                     </div>
+                     <div class="flex sm:space-x-4 space-y-3 sm:space-y-0 flex-col sm:flex-row">
+                        <button
+                           class="sm:px-6 xl:px-10 2xl:px-20 py-3.5 text-sm font-medium rounded-xl text-grayscale-1 bg-primary-main sm:w-6/12">Add&nbsp;funds</button>
+                        <button
+                           class="sm:px-6 xl:px-10 2xl:px-20 py-3.5 text-sm font-semibold rounded-xl text-primary-main bg-primary-surface sm:w-6/12">Withdraw&nbsp;funds
+                        </button>
+                     </div>
+                  </div>
+                  <!-- Table Left Top -->
+                  <!-- Table Left Bottom -->
+                  <div class="sm:p-6 p-4 space-y-6 border border-grayscale-3 rounded-2xl w-full">
+                     <h1 class="text-base font-semibold text-grayscale-10">
+                        Send to friend
+                     </h1>
+                     <div>
+                        <input type="search" placeholder="Search account"
+                           class="w-full bg-grayscale-2 border-0 px-4 py-3.5 rounded-xl placeholder-grayscale-8 placeholder-medium focus:ring-0" />
+                     </div>
+                     <div>
+                        <div class="flex items-center justify-between border-b border-grayscale-3 border-solid py-4">
+                           <div class="flex space-x-3 items-center">
+                              <img class="object-cover w-12 h-12 rounded-full"
+                                 src="https://images.pexels.com/photos/39866/entrepreneur-startup-start-up-man-39866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                 alt="Profile image" />
+                              <div class="space-y-1">
+                                 <h1 class="text-sm font-semibold text-grayscale-10">Ronald Richards</h1>
+                                 <h2 class="text-xs font-medium text-grayscale-8">@ronald_</h2>
+                              </div>
+                           </div>
+                           <div>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                 class="bi bi-arrow-right-short text-grayscale-9" viewBox="0 0 16 16">
+                                 <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                              </svg>
+                           </div>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-grayscale-3 border-solid py-4">
+                           <div class="flex space-x-3 items-center">
+                              <img class="object-cover w-12 h-12 rounded-full"
+                                 src="https://images.pexels.com/photos/837358/pexels-photo-837358.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                 alt="Profile image" />
+                              <div class="space-y-1">
+                                 <h1 class="text-sm font-semibold text-grayscale-10">Arlene McCoy</h1>
+                                 <h2 class="text-xs font-medium text-grayscale-8">@mccoy</h2>
+                              </div>
+                           </div>
+                           <div>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                 class="bi bi-arrow-right-short text-grayscale-9" viewBox="0 0 16 16">
+                                 <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                              </svg>
+                           </div>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-grayscale-3 border-solid py-4">
+                           <div class="flex space-x-3 items-center">
+                              <img class="object-cover w-12 h-12 rounded-full"
+                                 src="https://images.pexels.com/photos/445109/pexels-photo-445109.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                 alt="Profile image" />
+                              <div class="space-y-1">
+                                 <h1 class="text-sm font-semibold text-grayscale-10">Kristin Watson</h1>
+                                 <h2 class="text-xs font-medium text-grayscale-8">@watson</h2>
+                              </div>
+                           </div>
+                           <div>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                 class="bi bi-arrow-right-short text-grayscale-9" viewBox="0 0 16 16">
+                                 <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                              </svg>
+                           </div>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-grayscale-3 border-solid py-4">
+                           <div class="flex space-x-3 items-center">
+                              <img class="object-cover w-12 h-12 rounded-full"
+                                 src="https://images.pexels.com/photos/845457/pexels-photo-845457.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                 alt="Profile image" />
+                              <div class="space-y-1">
+                                 <h1 class="text-sm font-semibold text-grayscale-10">Cameron Williamson</h1>
+                                 <h2 class="text-xs font-medium text-grayscale-8">@cameron</h2>
+                              </div>
+                           </div>
+                           <div>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                 class="bi bi-arrow-right-short text-grayscale-9" viewBox="0 0 16 16">
+                                 <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                              </svg>
+                           </div>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-grayscale-3 border-solid py-4">
+                           <div class="flex space-x-3 items-center">
+                              <img class="object-cover w-12 h-12 rounded-full"
+                                 src="https://images.pexels.com/photos/762080/pexels-photo-762080.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                 alt="Profile image" />
+                              <div class="space-y-1">
+                                 <h1 class="text-sm font-semibold text-grayscale-10">Dianne Russell</h1>
+                                 <h2 class="text-xs font-medium text-grayscale-8">@dianne</h2>
+                              </div>
+                           </div>
+                           <div>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                 class="bi bi-arrow-right-short text-grayscale-9" viewBox="0 0 16 16">
+                                 <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                              </svg>
+                           </div>
+                        </div>
+                        <div class="flex items-center justify-between py-4">
+                           <div class="flex space-x-3 items-center">
+                              <img class="object-cover w-12 h-12 rounded-full"
+                                 src="https://images.pexels.com/photos/819530/pexels-photo-819530.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                 alt="Profile image" />
+                              <div class="space-y-1">
+                                 <h1 class="text-sm font-semibold text-grayscale-10">Savannah Nguyen</h1>
+                                 <h2 class="text-xs font-medium text-grayscale-8">@nguyen</h2>
+                              </div>
+                           </div>
+                           <div>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                 class="bi bi-arrow-right-short text-grayscale-9" viewBox="0 0 16 16">
+                                 <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                              </svg>
+                           </div>
+                        </div>
+                        <div class="pt-4">
+                           <a href="#" class="text-sm font-semibold text-primary-main">View more</a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Table Left Bottom -->
+               </div>
+               <!-- Table Left -->
+            </div>
+            <!-- Table -->
+         </div>
+         <!-- Content -->
+      </section>
+   </body>
+</html>
