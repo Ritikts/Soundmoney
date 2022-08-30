@@ -19,69 +19,230 @@
    </head>
    <body>
       <section>
-         <!-- Navigation -->
-         <nav class="flex justify-between items-center lg:px-28 px-6 py-4 border-b border-grayscale-3 border-solid">
-            <div class="flex items-center w-full justify-between sm:w-auto sm:space-x-5 lg:space-x-10 xl:space-x-16">
-               <div class="space-x-2 flex items-center">
-                  <div>
-                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                           d="M0 0V19.2515L11.9573 24L23.9145 19.2515V0H0ZM21.5512 17.6374L14.2036 20.5614L11.9573 21.4503L9.80449 20.5848L2.36337 17.6374V2.36257H21.5278V17.6374H21.5512Z"
-                           fill="#060A18" />
-                        <path d="M16.754 4.77185H19.1408V7.15781H16.754V4.77185Z" fill="#060A18" />
-                        <path
-                           d="M11.9572 18.8303V18.8537L19.1409 15.9765V9.42682H16.7541V14.3625L11.9572 16.2806L7.16023 14.3625V7.15781H11.9572V9.54378H9.54701V12.7719L11.9572 13.7075V13.6841H11.9806L14.344 12.7719V4.77185H4.75006V15.9765L11.9338 18.8537L11.9572 18.8303Z"
-                           fill="#060A18" />
-                     </svg>
-                  </div>
-                  <h1 class="sm:hidden text-lg font-semibold text-grayscale-10">
-                     Soundmoney
-                  </h1>
-               </div>
-               <div class="hidden sm:flex sm:space-x-5 xl:space-x-10">
-                  <div class="xl:space-x-3 space-x-2">
-                     <i class="bi bi-grid-1x2-fill text-grayscale-9 hover:text-primary-main"></i><a href="#"
-                        class="text-sm font-semibold text-grayscale-9">Dashboard</a>
-                  </div>
-                  <div class="xl:space-x-3 space-x-2">
-                     <i class="bi bi-person-fill text-grayscale-9 hover:text-primary-main "></i><a href="#"
-                        class="text-sm font-semibold text-grayscale-9">Friends</a>
-                  </div>
-                  <div class="xl:space-x-3 space-x-2">
-                     <i class="bi bi-gear-fill text-grayscale-9 hover:text-primary-main  "></i><a href="#"
-                        class="text-sm font-semibold text-grayscale-9">Setting</a>
-                  </div>
-                  <div class="xl:space-x-3 space-x-2">
-                     <i class="bi bi-question-circle-fill text-grayscale-9 hover:text-primary-main "></i><a href="#"
-                        class="text-sm font-semibold text-grayscale-9">Help Center</a>
-                  </div>
-               </div>
-               <div class="sm:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
-                     class="bi bi-filter-right" viewBox="0 0 16 16">
-                     <path
-                        d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z" />
-                  </svg>
-               </div>
-            </div>
-            <div class="hidden sm:flex sm:items-center sm:justify-center sm:space-x-3">
-               <div>
-                  <a href="#" class="block relative">
-                  <img alt="profil"
-                     src="https://images.unsplash.com/photo-1484515991647-c5760fcecfc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80"
-                     class="object-cover rounded-full h-10 w-10" />
-                  </a>
-               </div>
-               <div class="space-y-1.5">
-                  <h2 class="text-sm font-semibold text-grayscale-10">Alex ever</h2>
-                  <h3 class="text-xs font-medium text-grayscale-7">
-                     alexever@gmail.com
-                  </h3>
-               </div>
-               <div><i class="bi bi-arrow-down-short text-grayscale-10"></i></div>
-            </div>
-         </nav>
-         <!-- Navigation -->
+        <!-- Navigation -->
+     <main class="sm:hidden">
+      <nav
+        class="flex items-center justify-between px-6 py-4 border-b border-grayscale-3 border-solid"
+      >
+        <div class="flex space-x-2 items-center">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0V19.2515L11.9573 24L23.9145 19.2515V0H0ZM21.5512 17.6374L14.2036 20.5614L11.9573 21.4503L9.80449 20.5848L2.36337 17.6374V2.36257H21.5278V17.6374H21.5512Z"
+              fill="#060A18"
+            />
+            <path
+              d="M16.754 4.77185H19.1408V7.15781H16.754V4.77185Z"
+              fill="#060A18"
+            />
+            <path
+              d="M11.9572 18.8303V18.8537L19.1409 15.9765V9.42682H16.7541V14.3625L11.9572 16.2806L7.16023 14.3625V7.15781H11.9572V9.54378H9.54701V12.7719L11.9572 13.7075V13.6841H11.9806L14.344 12.7719V4.77185H4.75006V15.9765L11.9338 18.8537L11.9572 18.8303Z"
+              fill="#060A18"
+            />
+          </svg>
+          <h1 class="text-lg font-semibold text-grayscale-10">Soundmoney</h1>
+        </div>
+        <div id="open">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="currentColor"
+            class="bi bi-filter-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z"
+            />
+          </svg>
+        </div>
+        <div class="hidden" id="close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
+        </div>
+      </nav>
+      <div id="menu" class="hidden">
+        <div class="border-b border-grayscale-3 border-solid">
+          <div class="space-x-3 p-4">
+            <i
+              class="bi bi-grid-1x2-fill text-grayscale-9 hover:text-primary-main"
+            ></i
+            ><a href="dashboard_full.html" class="text-sm font-semibold text-grayscale-9"
+              >Dashboard</a
+            >
+          </div>
+          <div
+            class="space-x-3 p-4 border-l-2 border-primary-main border-solid"
+          >
+            <i class="bi bi-person-fill text-primary-main"></i
+            ><a href="friends_full.html" class="text-sm font-semibold text-grayscale-10"
+              >Friends</a
+            >
+          </div>
+          <div class="space-x-3 p-4">
+            <i
+              class="bi bi-gear-fill text-grayscale-9 hover:text-primary-main"
+            ></i
+            ><a href="#" class="text-sm font-semibold text-grayscale-9"
+              >Setting</a
+            >
+          </div>
+          <div class="space-x-3 p-4">
+            <i
+              class="bi bi-question-circle-fill text-grayscale-9 hover:text-primary-main"
+            ></i
+            ><a href="#" class="text-sm font-semibold text-grayscale-9"
+              >Help Center</a
+            >
+          </div>
+        </div>
+        <div class="flex items-center p-4 space-x-3">
+          <div>
+            <a href="#" class="block relative">
+              <img
+                alt="profil"
+                src="https://images.unsplash.com/photo-1484515991647-c5760fcecfc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80"
+                class="object-cover rounded-full h-10 w-10"
+              />
+            </a>
+          </div>
+          <div class="space-y-1.5">
+            <h2 class="text-sm font-semibold text-grayscale-10">Alex ever</h2>
+            <h3 class="text-xs font-medium text-grayscale-7">
+              alexever@gmail.com
+            </h3>
+          </div>
+        </div>
+        <div
+          class="space-x-3 p-4 flex items-center border-b border-grayscale-3 border-solid"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.2 1.33301H9.46667C7.33333 1.33301 6 2.66634 6 4.79967V7.49967H10.1667C10.44 7.49967 10.6667 7.72634 10.6667 7.99967C10.6667 8.27301 10.44 8.49967 10.1667 8.49967H6V11.1997C6 13.333 7.33333 14.6663 9.46667 14.6663H11.1933C13.3267 14.6663 14.66 13.333 14.66 11.1997V4.79967C14.6667 2.66634 13.3333 1.33301 11.2 1.33301Z"
+              fill="#D92D20"
+            />
+            <path
+              d="M3.03996 7.50022L4.41996 6.12022C4.51996 6.02022 4.56663 5.89355 4.56663 5.76689C4.56663 5.64022 4.51996 5.50689 4.41996 5.41355C4.22663 5.22022 3.90663 5.22022 3.71329 5.41355L1.47996 7.64689C1.28663 7.84022 1.28663 8.16022 1.47996 8.35355L3.71329 10.5869C3.90663 10.7802 4.22663 10.7802 4.41996 10.5869C4.61329 10.3936 4.61329 10.0736 4.41996 9.88022L3.03996 8.50022H5.99996V7.50022H3.03996V7.50022Z"
+              fill="#D92D20"
+            />
+          </svg>
+          <a href="#" class="text-sm font-semibold text-grayscale-9"
+            >Log out</a
+          >
+        </div>
+      </div>
+    </main>
+    <nav
+      class="flex justify-between items-center lg:px-28 sm:px-6 sm:py-0 sm:border-b sm:border-grayscale-3 sm:border-solid"
+    >
+      <div
+        class="flex items-center w-full justify-between sm:w-auto space-x-2 xl:space-x-12"
+      >
+        <div class="space-x-2 flex items-center">
+          <div>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="hidden sm:block"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0V19.2515L11.9573 24L23.9145 19.2515V0H0ZM21.5512 17.6374L14.2036 20.5614L11.9573 21.4503L9.80449 20.5848L2.36337 17.6374V2.36257H21.5278V17.6374H21.5512Z"
+                fill="#060A18"
+              />
+              <path
+                d="M16.754 4.77185H19.1408V7.15781H16.754V4.77185Z"
+                fill="#060A18"
+              />
+              <path
+                d="M11.9572 18.8303V18.8537L19.1409 15.9765V9.42682H16.7541V14.3625L11.9572 16.2806L7.16023 14.3625V7.15781H11.9572V9.54378H9.54701V12.7719L11.9572 13.7075V13.6841H11.9806L14.344 12.7719V4.77185H4.75006V15.9765L11.9338 18.8537L11.9572 18.8303Z"
+                fill="#060A18"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="hidden sm:flex">
+          <div class="xl:space-x-3 space-x-2 py-6 px-4">
+            <i
+              class="bi bi-grid-1x2-fill text-grayscale-9 hover:text-primary-main"
+            ></i
+            ><a
+              href="dashboard_full.html"
+              class="text-sm font-semibold text-grayscale-9"
+              >Dashboard</a
+            >
+          </div>
+          <div
+            class="xl:space-x-3 space-x-2 py-6 px-4 sm:border-b-2 sm:border-primary-main sm:border-solid"
+          >
+            <i class="bi bi-person-fill text-primary-main"></i
+            ><a href="friends_full.html" class="text-sm font-semibold text-grayscale-10"
+              >Friends</a
+            >
+          </div>
+          <div class="xl:space-x-3 space-x-2 py-6 px-4">
+            <i
+              class="bi bi-gear-fill text-grayscale-9 hover:text-primary-main"
+            ></i
+            ><a href="#" class="text-sm font-semibold text-grayscale-9"
+              >Setting</a
+            >
+          </div>
+          <div class="xl:space-x-3 space-x-2 py-6 px-4">
+            <i
+              class="bi bi-question-circle-fill text-grayscale-9 hover:text-primary-main"
+            ></i
+            ><a href="#" class="text-sm font-semibold text-grayscale-9"
+              >Help Center</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="hidden sm:flex sm:items-center sm:justify-center sm:space-x-3"
+      >
+        <div>
+          <a href="#" class="block relative">
+            <img
+              alt="profil"
+              src="https://images.unsplash.com/photo-1484515991647-c5760fcecfc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80"
+              class="object-cover rounded-full h-10 w-10"
+            />
+          </a>
+        </div>
+        <div class="space-y-1.5">
+          <h2 class="text-sm font-semibold text-grayscale-10">Alex ever</h2>
+          <h3 class="text-xs font-medium text-grayscale-7">
+            alexever@gmail.com
+          </h3>
+        </div>
+        <div><i class="bi bi-arrow-down-short text-grayscale-10"></i></div>
+      </div>
+    </nav>
+    <!-- Navigation -->
          <!-- Content -->
          <div class="px-6 py-6 space-y-4 lg:px-[125px] xl:px-[150px]">
             <!-- Pagination -->
