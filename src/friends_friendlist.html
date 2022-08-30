@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="/dist/output.css" rel="stylesheet" />
+      <link rel="stylesheet" href="extracss/style.css" />
+      <link rel="stylesheet" href="./fontcss/font.css" />
+      <!-- Title  -->
+      <title>Soundmoney</title>
+      <!-- Title  -->
+      <!-- Favicon -->
+      <link rel="shortcut icon" type="image/jpg" href="img/logo.svg" />
+      <link rel="apple-touch-icon" sizes="96*96" href="img/logo.svg" />
+      <!-- Favicon -->
+      <meta name="theme-color" content="#06856C" />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+         />
+   </head>
+   <body>
+      <section>
+         <!-- Navigation -->
+         <main class="sm:hidden">
+            <nav
+               class="flex items-center justify-between px-6 py-4 border-b border-grayscale-3 border-solid"
+               >
+               <div class="flex space-x-2 items-center">
+                  <svg
+                     width="24"
+                     height="24"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                     >
+                     <path
+                        d="M0 0V19.2515L11.9573 24L23.9145 19.2515V0H0ZM21.5512 17.6374L14.2036 20.5614L11.9573 21.4503L9.80449 20.5848L2.36337 17.6374V2.36257H21.5278V17.6374H21.5512Z"
+                        fill="#060A18"
+                        />
+                     <path
+                        d="M16.754 4.77185H19.1408V7.15781H16.754V4.77185Z"
+                        fill="#060A18"
+                        />
+                     <path
+                        d="M11.9572 18.8303V18.8537L19.1409 15.9765V9.42682H16.7541V14.3625L11.9572 16.2806L7.16023 14.3625V7.15781H11.9572V9.54378H9.54701V12.7719L11.9572 13.7075V13.6841H11.9806L14.344 12.7719V4.77185H4.75006V15.9765L11.9338 18.8537L11.9572 18.8303Z"
+                        fill="#060A18"
+                        />
+                  </svg>
+                  <h1 class="text-lg font-semibold text-grayscale-10">Soundmoney</h1>
+               </div>
+               <div id="open">
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="28"
+                     height="28"
+                     fill="currentColor"
+                     class="bi bi-filter-right"
+                     viewBox="0 0 16 16"
+                     >
+                     <path
+                        d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z"
+                        />
+                  </svg>
+               </div>
+               <div class="hidden" id="close">
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="16"
+                     height="16"
+                     fill="currentColor"
+                     class="bi bi-x-lg"
+                     viewBox="0 0 16 16"
+                     >
+                     <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+                        />
+                  </svg>
+               </div>
+            </nav>
+            <div id="menu" class="hidden">
+               <div class="border-b border-grayscale-3 border-solid">
+                  <div class="space-x-3 p-4">
+                     <i
+                        class="bi bi-grid-1x2-fill text-grayscale-9 hover:text-primary-main"
+                        ></i
+                        ><a
+                        href="dashboard_full.html"
+                        class="text-sm font-semibold text-grayscale-9"
+                        >Dashboard</a
+                        >
+                  </div>
+                  <div
+                     class="space-x-3 p-4 border-l-2 border-primary-main border-solid"
+                     >
+                     <i class="bi bi-person-fill text-primary-main"></i
+                        ><a
+                        href="friends_full.html"
+                        class="text-sm font-semibold text-grayscale-10"
+                        >Friends</a
+                        >
+                  </div>
+                  <div class="space-x-3 p-4">
+                     <i
+                        class="bi bi-gear-fill text-grayscale-9 hover:text-primary-main"
+                        ></i
+                        ><a href="#" class="text-sm font-semibold text-grayscale-9"
+                        >Setting</a
+                        >
+                  </div>
+                  <div class="space-x-3 p-4">
+                     <i
+                        class="bi bi-question-circle-fill text-grayscale-9 hover:text-primary-main"
+                        ></i
+                        ><a href="#" class="text-sm font-semibold text-grayscale-9"
+                        >Help Center</a
+                        >
+                  </div>
+               </div>
+               <div class="flex items-center p-4 space-x-3">
+                  <div>
+                     <a href="#" class="block relative">
+                     <img
+                        alt="profil"
+                        src="https://images.unsplash.com/photo-1484515991647-c5760fcecfc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80"
+                        class="object-cover rounded-full h-10 w-10"
+                        />
+                     </a>
+                  </div>
+                  <div class="space-y-1.5">
+                     <h2 class="text-sm font-semibold text-grayscale-10">Alex ever</h2>
+                     <h3 class="text-xs font-medium text-grayscale-7">
+                        alexever@gmail.com
+                     </h3>
+                  </div>
+               </div>
+               <div
+                  class="space-x-3 p-4 flex items-center border-b border-grayscale-3 border-solid"
+                  >
+                  <svg
+                     width="20"
+                     height="20"
+                     viewBox="0 0 16 16"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                     >
+                     <path
+                        d="M11.2 1.33301H9.46667C7.33333 1.33301 6 2.66634 6 4.79967V7.49967H10.1667C10.44 7.49967 10.6667 7.72634 10.6667 7.99967C10.6667 8.27301 10.44 8.49967 10.1667 8.49967H6V11.1997C6 13.333 7.33333 14.6663 9.46667 14.6663H11.1933C13.3267 14.6663 14.66 13.333 14.66 11.1997V4.79967C14.6667 2.66634 13.3333 1.33301 11.2 1.33301Z"
+                        fill="#D92D20"
+                        />
+                     <path
+                        d="M3.03996 7.50022L4.41996 6.12022C4.51996 6.02022 4.56663 5.89355 4.56663 5.76689C4.56663 5.64022 4.51996 5.50689 4.41996 5.41355C4.22663 5.22022 3.90663 5.22022 3.71329 5.41355L1.47996 7.64689C1.28663 7.84022 1.28663 8.16022 1.47996 8.35355L3.71329 10.5869C3.90663 10.7802 4.22663 10.7802 4.41996 10.5869C4.61329 10.3936 4.61329 10.0736 4.41996 9.88022L3.03996 8.50022H5.99996V7.50022H3.03996V7.50022Z"
+                        fill="#D92D20"
+                        />
+                  </svg>
+                  <a href="#" class="text-sm font-semibold text-grayscale-9"
+                     >Log out</a
+                     >
+               </div>
+            </div>
+         </main>
+         <nav
+            class="flex justify-between items-center lg:px-28 sm:px-6 sm:py-0 sm:border-b sm:border-grayscale-3 sm:border-solid"
+            >
+            <div
+               class="flex items-center w-full justify-between sm:w-auto space-x-2 xl:space-x-12"
+               >
+               <div class="space-x-2 flex items-center">
+                  <div>
+                     <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        class="hidden sm:block"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <path
+                           d="M0 0V19.2515L11.9573 24L23.9145 19.2515V0H0ZM21.5512 17.6374L14.2036 20.5614L11.9573 21.4503L9.80449 20.5848L2.36337 17.6374V2.36257H21.5278V17.6374H21.5512Z"
+                           fill="#060A18"
+                           />
+                        <path
+                           d="M16.754 4.77185H19.1408V7.15781H16.754V4.77185Z"
+                           fill="#060A18"
+                           />
+                        <path
+                           d="M11.9572 18.8303V18.8537L19.1409 15.9765V9.42682H16.7541V14.3625L11.9572 16.2806L7.16023 14.3625V7.15781H11.9572V9.54378H9.54701V12.7719L11.9572 13.7075V13.6841H11.9806L14.344 12.7719V4.77185H4.75006V15.9765L11.9338 18.8537L11.9572 18.8303Z"
+                           fill="#060A18"
+                           />
+                     </svg>
+                  </div>
+               </div>
+               <div class="hidden sm:flex">
+                  <div class="xl:space-x-3 space-x-2 py-6 px-4">
+                     <i
+                        class="bi bi-grid-1x2-fill text-grayscale-9 hover:text-primary-main"
+                        ></i
+                        ><a
+                        href="dashboard_full.html"
+                        class="text-sm font-semibold text-grayscale-9"
+                        >Dashboard</a
+                        >
+                  </div>
+                  <div
+                     class="xl:space-x-3 space-x-2 py-6 px-4 sm:border-b-2 sm:border-primary-main sm:border-solid"
+                     >
+                     <i class="bi bi-person-fill text-primary-main"></i
+                        ><a
+                        href="friends_full.html"
+                        class="text-sm font-semibold text-grayscale-10"
+                        >Friends</a
+                        >
+                  </div>
+                  <div class="xl:space-x-3 space-x-2 py-6 px-4">
+                     <i
+                        class="bi bi-gear-fill text-grayscale-9 hover:text-primary-main"
+                        ></i
+                        ><a href="#" class="text-sm font-semibold text-grayscale-9"
+                        >Setting</a
+                        >
+                  </div>
+                  <div class="xl:space-x-3 space-x-2 py-6 px-4">
+                     <i
+                        class="bi bi-question-circle-fill text-grayscale-9 hover:text-primary-main"
+                        ></i
+                        ><a href="#" class="text-sm font-semibold text-grayscale-9"
+                        >Help Center</a
+                        >
+                  </div>
+               </div>
+            </div>
+            <div
+               class="hidden sm:flex sm:items-center sm:justify-center sm:space-x-3"
+               >
+               <div>
+                  <a href="#" class="block relative">
+                  <img
+                     alt="profil"
+                     src="https://images.unsplash.com/photo-1484515991647-c5760fcecfc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80"
+                     class="object-cover rounded-full h-10 w-10"
+                     />
+                  </a>
+               </div>
+               <div class="space-y-1.5">
+                  <h2 class="text-sm font-semibold text-grayscale-10">Alex ever</h2>
+                  <h3 class="text-xs font-medium text-grayscale-7">
+                     alexever@gmail.com
+                  </h3>
+               </div>
+               <div><i class="bi bi-arrow-down-short text-grayscale-10"></i></div>
+            </div>
+         </nav>
+         <!-- Navigation -->
+         <!-- Content -->
+         <div class="px-6 py-6 lg:px-[125px] xl:px-[150px]">
+         <!-- Table -->
+         <div
+            class="flex w-full flex-col xl:flex-row space-y-6 xl:space-y-0 xl:space-x-6"
+            >
+            <!-- Table Right -->
+            <div
+               class="sm:p-6 p-4 border border-grayscale-3 rounded-2xl space-y-6 w-full h-full"
+               >
+               <div>
+                  <h1 class="text-base font-semibold text-grayscale-10">
+                     Recently interacted with
+                  </h1>
+               </div>
+               <div class="relative block">
+                  <span class="sr-only">Search</span>
+                  <span class="absolute inset-y-0 left-0 flex items-center pl-4">
+                     <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <path
+                           d="M7.66732 13.9999C11.1651 13.9999 14.0007 11.1644 14.0007 7.66659C14.0007 4.16878 11.1651 1.33325 7.66732 1.33325C4.16951 1.33325 1.33398 4.16878 1.33398 7.66659C1.33398 11.1644 4.16951 13.9999 7.66732 13.9999Z"
+                           stroke="#3C4254"
+                           stroke-width="1.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           />
+                        <path
+                           d="M14.6673 14.6666L13.334 13.3333"
+                           stroke="#3C4254"
+                           stroke-width="1.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           />
+                     </svg>
+                  </span>
+                  <input
+                     type="search"
+                     class="w-full py-3.5 pr-4 pl-10 text-sm font-medium rounded-xl bg-grayscale-2 border-transparent focus:bg-grayscale-1 focus:text-grayscale-10 hover:bg-grayscale-1 hover:border hover:border-primary-border focus:outline-none focus:ring focus:ring-primary-border focus:border-primary-main placeholder-grayscale-8 focus:placeholder-grayscale-5"
+                     placeholder="Search transaction"
+                     />
+               </div>
+               <div class="flex sm:space-x-8 space-x-4">
+                  <div>
+                     <a
+                        href="#"
+                        class="px-3 py-2 bg-primary-main rounded-[26px] text-grayscale-1 sm:text-sm text-xs font-medium"
+                        >All&nbsp;transactions</a
+                        >
+                  </div>
+                  <div>
+                     <a
+                        href="#"
+                        class="sm:text-sm text-xs font-semibold text-primary-main"
+                        >Send</a
+                        >
+                  </div>
+                  <div>
+                     <a
+                        href="#"
+                        class="sm:text-sm text-xs font-semibold text-primary-main"
+                        >Receive</a
+                        >
+                  </div>
+               </div>
+               <div>
+                  <div
+                     class="flex justify-between py-5 border-b border-grayscale-3 border-solid"
+                     >
+                     <div class="flex items-center space-x-2 sm:space-x-4">
+                        <div>
+                           <img
+                              class="object-cover w-10 h-10 rounded-full"
+                              src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=600"
+                              alt="Profile image"
+                              />
+                        </div>
+                        <div class="space-y-0.5">
+                           <h1
+                              class="text-xs xl:text-sm font-semibold text-grayscale-10"
+                              >
+                              Send to Ronald Richards
+                           </h1>
+                           <h2 class="text-xs font-medium text-grayscale-8">
+                              Gold bars
+                           </h2>
+                        </div>
+                     </div>
+                     <div class="space-y-0.5">
+                        <div class="text-xs xl:text-sm font-medium text-grayscale-9">
+                           30 April 2022
+                        </div>
+                        <div class="text-xs font-medium text-grayscale-8">
+                           at 10.30
+                        </div>
+                     </div>
+                     <div>
+                        <div
+                           class="text-xs xl:text-sm font-semibold text-danger-hover"
+                           >
+                           -$0.00
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                     class="flex justify-between py-5 border-b border-grayscale-3 border-solid"
+                     >
+                     <div class="flex items-center space-x-2 sm:space-x-4">
+                        <div>
+                           <img
+                              class="object-cover w-10 h-10 rounded-full"
+                              src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=600"
+                              alt="Profile image"
+                              />
+                        </div>
+                        <div class="space-y-0.5">
+                           <h1
+                              class="text-xs xl:text-sm font-semibold text-grayscale-10"
+                              >
+                              Receive from Ronald Richards
+                           </h1>
+                           <h2 class="text-xs font-medium text-grayscale-8">
+                              Gold bars
+                           </h2>
+                        </div>
+                     </div>
+                     <div class="space-y-0.5">
+                        <div class="text-xs xl:text-sm font-medium text-grayscale-9">
+                           30 April 2022
+                        </div>
+                        <div class="text-xs font-medium text-grayscale-8">
+                           at 10.30
+                        </div>
+                     </div>
+                     <div>
+                        <div
+                           class="text-xs xl:text-sm font-semibold text-danger-hover"
+                           >
+                           -$0.00
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                     class="flex justify-between py-5 border-b border-grayscale-3 border-solid"
+                     >
+                     <div class="flex items-center space-x-2 sm:space-x-4">
+                        <div>
+                           <img
+                              class="object-cover w-10 h-10 rounded-full"
+                              src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600"
+                              alt="Profile image"
+                              />
+                        </div>
+                        <div class="space-y-0.5">
+                           <h1
+                              class="text-xs xl:text-sm font-semibold text-grayscale-10"
+                              >
+                              Send to Ronald Richards
+                           </h1>
+                           <h2 class="text-xs font-medium text-grayscale-8">
+                              Silver coin
+                           </h2>
+                        </div>
+                     </div>
+                     <div class="space-y-0.5">
+                        <div class="text-xs xl:text-sm font-medium text-grayscale-9">
+                           30 April 2022
+                        </div>
+                        <div class="text-xs font-medium text-grayscale-8">
+                           at 10.30
+                        </div>
+                     </div>
+                     <div>
+                        <div
+                           class="text-xs xl:text-sm font-semibold text-danger-hover"
+                           >
+                           -$0.00
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                     class="flex justify-between py-5 border-b border-grayscale-3 border-solid"
+                     >
+                     <div class="flex items-center space-x-2 sm:space-x-4">
+                        <div>
+                           <img
+                              class="object-cover w-10 h-10 rounded-full"
+                              src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600"
+                              alt="Profile image"
+                              />
+                        </div>
+                        <div class="space-y-0.5">
+                           <h1
+                              class="text-xs xl:text-sm font-semibold text-grayscale-10"
+                              >
+                              Receive from Kristin Watson
+                           </h1>
+                           <h2 class="text-xs font-medium text-grayscale-8">
+                              Silver bars
+                           </h2>
+                        </div>
+                     </div>
+                     <div class="space-y-0.5">
+                        <div class="text-xs xl:text-sm font-medium text-grayscale-9">
+                           30 April 2022
+                        </div>
+                        <div class="text-xs font-medium text-grayscale-8">
+                           at 10.30
+                        </div>
+                     </div>
+                     <div>
+                        <div
+                           class="text-xs xl:text-sm font-semibold text-danger-hover"
+                           >
+                           -$0.00
+                        </div>
+                     </div>
+                  </div>
+                  <div class="flex justify-between py-5">
+                     <div class="flex items-center space-x-2 sm:space-x-4">
+                        <div>
+                           <img
+                              class="object-cover w-10 h-10 rounded-full"
+                              src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=600"
+                              alt="Profile image"
+                              />
+                        </div>
+                        <div class="space-y-0.5">
+                           <h1
+                              class="text-xs xl:text-sm font-semibold text-grayscale-10"
+                              >
+                              Send to Ronald Richards
+                           </h1>
+                           <h2 class="text-xs font-medium text-grayscale-8">Cash</h2>
+                        </div>
+                     </div>
+                     <div class="space-y-0.5">
+                        <div class="text-xs xl:text-sm font-medium text-grayscale-9">
+                           30 April 2022
+                        </div>
+                        <div class="text-xs font-medium text-grayscale-8">
+                           at 10.30
+                        </div>
+                     </div>
+                     <div>
+                        <div
+                           class="text-xs xl:text-sm font-semibold text-danger-hover"
+                           >
+                           -$0.00
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pt-4">
+                     <a href="#" class="text-sm font-semibold text-primary-main"
+                        >View more</a
+                        >
+                  </div>
+               </div>
+            </div>
+            <!-- Table Right -->
+            <!-- Table Left -->
+            <div
+               class="sm:p-6 p-4 space-y-6 border border-grayscale-3 rounded-2xl w-full h-full"
+               >
+               <h1 class="text-base font-semibold text-grayscale-10">
+                  Friend manager
+               </h1>
+               <div class="relative block">
+                  <span class="sr-only">Search</span>
+                  <span class="absolute inset-y-0 left-0 flex items-center pl-4">
+                     <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <path
+                           d="M7.66732 13.9999C11.1651 13.9999 14.0007 11.1644 14.0007 7.66659C14.0007 4.16878 11.1651 1.33325 7.66732 1.33325C4.16951 1.33325 1.33398 4.16878 1.33398 7.66659C1.33398 11.1644 4.16951 13.9999 7.66732 13.9999Z"
+                           stroke="#3C4254"
+                           stroke-width="1.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           />
+                        <path
+                           d="M14.6673 14.6666L13.334 13.3333"
+                           stroke="#3C4254"
+                           stroke-width="1.5"
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           />
+                     </svg>
+                  </span>
+                  <input
+                     type="search"
+                     class="w-full py-3.5 pr-4 pl-10 text-sm font-medium rounded-xl bg-grayscale-2 border-transparent focus:bg-grayscale-1 focus:text-grayscale-10 hover:bg-grayscale-1 hover:border hover:border-primary-border focus:outline-none focus:ring focus:ring-primary-border focus:border-primary-main placeholder-grayscale-8 focus:placeholder-grayscale-5"
+                     placeholder="Search account"
+                     />
+               </div>
+               <div class="space-y-3">
+                  <div>
+                     <div
+                        class="text-sm font-semibold text-grayscale-10 flex items-center"
+                        >
+                        Your friendlist
+                     </div>
+                     <div
+                        class="flex items-center justify-between border-b border-grayscale-3 border-solid py-4"
+                        >
+                        <div class="flex space-x-3 items-center">
+                           <img
+                              class="object-cover w-12 h-12 rounded-full"
+                              src="https://images.pexels.com/photos/428333/pexels-photo-428333.jpeg?auto=compress&cs=tinysrgb&w=600"
+                              alt="Profile image"
+                              />
+                           <div class="space-y-1">
+                              <h1 class="text-sm font-semibold text-grayscale-10">
+                                 Reza rahaja
+                              </h1>
+                              <h2 class="text-xs font-medium text-grayscale-8">
+                                 @rahaja
+                              </h2>
+                           </div>
+                        </div>
+                        <div>
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-three-dots-vertical text-grayscale-9"
+                              viewBox="0 0 16 16"
+                              >
+                              <path
+                                 d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
+                                 />
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                     <div
+                        class="text-sm font-semibold text-grayscale-10 flex items-center"
+                        >
+                        People on Soundmoney
+                     </div>
+                     <div
+                        class="flex items-center justify-between py-4"
+                        >
+                        <div class="flex space-x-3 items-center">
+                           <img
+                              class="object-cover w-12 h-12 rounded-full"
+                              src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600"
+                              alt="Profile image"
+                              />
+                           <div class="space-y-1">
+                              <h1 class="text-sm font-semibold text-grayscale-10">
+                                 Reza raha
+                              </h1>
+                              <h2 class="text-xs font-medium text-grayscale-8">
+                                 @rahadian
+                              </h2>
+                           </div>
+                        </div>
+                        <button
+                           class="text-sm font-semibold text-grayscale-9 sm:space-x-1.5 px-2 py-2 sm:px-3 sm:py-2.5 bg-grayscale-2 border border-grayscale-4 rounded-xl flex items-center justify-center"
+                           >
+                           <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="22"
+                              height="22"
+                              fill="currentColor"
+                              class="bi bi-plus"
+                              viewBox="0 0 16 16"
+                              >
+                              <path
+                                 d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+                                 />
+                           </svg>
+                           <span>Add friend</span>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <!-- Table Left -->
+            </div>
+            <!-- Table -->
+         </div>
+         <!-- Content -->
+      </section>
+   </body>
+   <script src="./js/script.js"></script>
+</html>
